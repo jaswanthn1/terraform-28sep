@@ -1,3 +1,4 @@
+//here we created two resources i.e security group and ec2
 resource "aws_security_group" "allow_tf_28sept" {   // first resource
   name        = "allow_tf_28sept"
   description = "Allow Tf-28sept inbound traffic"
