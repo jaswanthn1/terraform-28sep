@@ -1,4 +1,4 @@
-data "aws_ami" "ami_info" {
+data "aws_ami" "ami_info" {  //data keyword is used to get the resource information, "resource" keyword is used to create a resource in cloud provider
   most_recent = true
   owners      = ["973714476881"]  // here it gives AMI's from ami_info so we do filters
 

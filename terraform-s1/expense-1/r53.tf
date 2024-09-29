@@ -10,5 +10,8 @@ resource "aws_route53_record" "expense" {
 }
 
 
+//we can take public ip for frontend by writting condition below
+# records = var.instance_names[count.index] == "frontend" ? [aws_instance.terraform[count.index].public_ip] : [aws_instance.terraform[count.index].private_ip]
+
 # use output.instances_info
 # output.instances_info == aws_instance.expense
