@@ -1,0 +1,81 @@
+ami_info = {
+  "architecture" = "x86_64"
+  "arn" = "arn:aws:ec2:us-east-1::image/ami-09c813fb71547fc4f"
+  "block_device_mappings" = toset([
+    {
+      "device_name" = "/dev/sda1"
+      "ebs" = tomap({
+        "delete_on_termination" = "true"
+        "encrypted" = "false"
+        "iops" = "3000"
+        "snapshot_id" = "snap-0c5265d8b25057b9a"
+        "throughput" = "125"
+        "volume_size" = "20"
+        "volume_type" = "gp3"
+      })
+      "no_device" = ""
+      "virtual_name" = ""
+    },
+  ])
+  "boot_mode" = "uefi-preferred"
+  "creation_date" = "2024-08-31T15:24:38.000Z"
+  "deprecation_time" = "2026-08-31T15:24:38.000Z"
+  "description" = ""
+  "ena_support" = true
+  "executable_users" = tolist(null) /* of string */
+  "filter" = toset([
+    {
+      "name" = "name"
+      "values" = toset([
+        "RHEL-9-DevOps-Practice",
+      ])
+    },
+    {
+      "name" = "root-device-type"
+      "values" = toset([
+        "ebs",
+      ])
+    },
+    {
+      "name" = "virtualization-type"
+      "values" = toset([
+        "hvm",
+      ])
+    },
+  ])
+  "hypervisor" = "xen"
+  "id" = "ami-09c813fb71547fc4f"
+  "image_id" = "ami-09c813fb71547fc4f"
+  "image_location" = "973714476881/RHEL-9-DevOps-Practice"
+  "image_owner_alias" = ""
+  "image_type" = "machine"
+  "imds_support" = ""
+  "include_deprecated" = false
+  "kernel_id" = ""
+  "most_recent" = true
+  "name" = "RHEL-9-DevOps-Practice"
+  "name_regex" = tostring(null)
+  "owner_id" = "973714476881"
+  "owners" = tolist([
+    "973714476881",
+  ])
+  "platform" = ""
+  "platform_details" = "Red Hat Enterprise Linux"
+  "product_codes" = toset([])
+  "public" = true
+  "ramdisk_id" = ""
+  "root_device_name" = "/dev/sda1"
+  "root_device_type" = "ebs"
+  "root_snapshot_id" = "snap-0c5265d8b25057b9a"
+  "sriov_net_support" = "simple"
+  "state" = "available"
+  "state_reason" = tomap({
+    "code" = "UNSET"
+    "message" = "UNSET"
+  })
+  "tags" = tomap({})
+  "timeouts" = null /* object */
+  "tpm_support" = ""
+  "usage_operation" = "RunInstances:0010"
+  "virtualization_type" = "hvm"
+}
